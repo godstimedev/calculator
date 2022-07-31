@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
+
+:root {
+  /* THHEME 1 */
+
+  /* Backgrounds */
+  --Very-dark-desaturated-blue1: hsl(222, 26%, 31%);
+  --Very-dark-desaturated-blue2: hsl(223, 31%, 20%);
+  --Very-dark-desaturated-blue3: hsl(224, 36%, 15%);
+
+  /* Keys */
+  --Desaturated-dark-blue1: hsl(225, 21%, 49%);
+  --Desaturated-dark-blue2: hsl(224, 28%, 35%);
+  --Red: hsl(6, 63%, 50%);
+  --Dark-red: hsl(6, 70%, 34%);
+  --Light-grayish-orange: hsl(30, 25%, 89%);
+  --Grayish-orange: hsl(28, 16%, 65%);
+
+  /* Text */
+  --Very-dark-grayish-blue: hsl(221, 14%, 31%);
+  --White: hsl(0, 0, 100%);
+
+  /* THEME 2 */
+
+  /* Backgrounds */
+  --Light-gray: hsl(0, 0%, 90%);
+  --Grayish-red: hsl(0, 5%, 81%);
+  --Very-light-gray: hsl(0, 0%, 93%);
+
+  /* Keys */
+  --Dark-moderate-cyan: hsl(185, 42%, 37%);
+  --Very-dark-cyan: hsl(185, 58%, 25%);
+  --Orange: hsl(25, 98%, 40%);
+  --Dark-orange: hsl(25, 99%, 27%);
+  --Light-grayish-yellow: hsl(45, 7%, 89%);
+  --Dark-grayish-orange: hsl(35, 11%, 61%);
+
+  /* Text */
+  --Very-dark-grayish-yellow: hsl(60, 10%, 19%);
+
+  /* THEME 3 */
+
+  /* Backgrounds */
+  --Very-dark-violet1: hsl(268, 75%, 9%);
+  --Very-dark-violet2: hsl(268, 71%, 12%);
+
+  /* Keys */
+  --Dark-violet: hsl(281, 89%, 26%);
+  --Vivid-magenta: hsl(285, 91%, 52%);
+  --Pure-cyan: hsl(176, 100%, 44%);
+  --Soft-cyan: hsl(177, 92%, 70%);
+  --Very-dark-violet3: hsl(268, 47%, 21%);
+  --Dark-magenta: hsl(290, 70%, 36%);
+
+  /* Text */
+  --Light-yellow: hsl(52, 100%, 62%);
+  --Very-dark-blue: hsl(198, 20%, 13%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "League Spartan";
+}
+
+@media (min-width: 375px) {
+  .App {
+    height: 100vh;
+    padding-top: 5vh;
+  }
+  .calculator-container {
+    width: 360px;
+    margin: auto;
+    padding: 1rem 1rem;
+    /* border: 2px solid red; */
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header h1 {
+    width: 50%;
+  }
+
+  .output {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    min-height: 13vh;
+    align-items: center;
+    padding: 1rem;
+    margin: 20px 0;
+    border-radius: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+  .output .current-operand {
+    font-size: 32px;
+  }
+  .calculator-grid {
+    display: grid;
+    margin-top: 2rem;
+    justify-content: center;
+    grid-template-columns: repeat(4, 3.5rem);
+    grid-template-rows: repeat(5, 3.5rem);
+    border-radius: 10px;
+    padding: 1.5rem 1rem;
+    gap: 1rem;
+  }
+
+  button {
+    cursor: pointer;
+    font-size: 32px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+  }
+
+  .span-two {
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: 768px) {
+  .App {
+    padding-top: 1vh;
+  }
+  .calculator-container {
+    width: 560px;
+    padding: 1rem 1rem;
+    max-height: 95vh;
+    /* border: 2px solid red; */
+  }
+  .calculator-grid {
+    grid-template-columns: repeat(4, 6rem);
+    grid-template-rows: repeat(5, 3.5rem);
+    padding: 2rem 1rem;
+    gap: 1.5rem;
+  }
+}

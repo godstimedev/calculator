@@ -1,0 +1,189 @@
+.switch-style {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 50%;
+  span {
+    display: block;
+    padding: 15px 20px 0 0;
+    letter-spacing: 0.09rem;
+  }
+  .switch-box {
+    display: flex;
+    flex-direction: column;
+    width: 6rem;
+    height: 100%;
+    transition: 0.5s ease;
+    .switch-btn-text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      bottom: 0%;
+      span {
+        margin-right: -0.3rem;
+        cursor: pointer;
+      }
+    }
+    .toggle {
+      display: block;
+      position: relative;
+      width: 5rem;
+      height: 20px;
+      border-radius: 150px;
+      background-color: var(--Very-dark-desaturated-blue2);
+      .switch-btn.theme1 {
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        width: 15px;
+        height: 15px;
+        transform: translate(10%, -50%);
+        border-radius: 100%;
+        background-color: var(--Red);
+        transition: 0.2s ease-in-out;
+      }
+      .switch-btn.theme2 {
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        width: 15px;
+        height: 15px;
+        transform: translate(155%, -50%);
+        border-radius: 100%;
+        background-color: var(--Red);
+        transition: 0.2s ease-in-out;
+      }
+      .switch-btn.theme3 {
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        width: 15px;
+        height: 15px;
+        transform: translate(315%, -50%);
+        border-radius: 100%;
+        background-color: var(--Red);
+        transition: 0.2s ease-in-out;
+      }
+    }
+  }
+}
+
+//theme
+
+.App.theme1 {
+  background-color: var(--Very-dark-desaturated-blue1);
+  .header {
+    color: white;
+    .toggle {
+      background-color: var(--Very-dark-desaturated-blue2);
+      .switch-btn {
+        background-color: var(--Red);
+      }
+    }
+  }
+  .output {
+    background-color: var(--Very-dark-desaturated-blue3);
+    .current-operand {
+      color: white;
+    }
+  }
+  .calculator-grid {
+    background-color: var(--Very-dark-desaturated-blue2);
+    button {
+      color: var(--Very-dark-grayish-blue);
+      background-color: var(--Light-grayish-orange);
+      box-shadow: 0 4px 2px -1px var(--Grayish-orange);
+    }
+    .light {
+      background-color: var(--Desaturated-dark-blue1);
+      box-shadow: 0 4px 2px -1px var(--Desaturated-dark-blue2);
+      color: white;
+    }
+    .equal {
+      background-color: var(--Red);
+      box-shadow: 0 4px 2px -1px var(--Dark-red);
+      color: white;
+    }
+  }
+}
+
+//theme 2
+
+.App.theme2 {
+  background-color: var(--Light-gray);
+  .header {
+    color: var(--Very-dark-grayish-yellow);
+    .toggle {
+      background-color: var(--Grayish-red);
+      .switch-btn {
+        background-color: var(--Orange);
+      }
+    }
+  }
+  .output {
+    background-color: var(--Very-light-gray);
+    .current-operand {
+      color: var(--Very-dark-grayish-yellow);
+    }
+  }
+  .calculator-grid {
+    background-color: var(--Grayish-red);
+    button {
+      color: var(--Very-dark-grayish-yellow);
+      background-color: var(--Light-grayish-yellow);
+      box-shadow: 0 4px 2px -1px var(--Dark-grayish-orange);
+    }
+    .light {
+      background-color: var(--Dark-moderate-cyan);
+      box-shadow: 0 4px 2px -1px var(--Very-dark-cyan);
+      color: white;
+    }
+    .equal {
+      background-color: var(--Orange);
+      box-shadow: 0 4px 2px -1px var(--Dark-orange);
+      color: white;
+    }
+  }
+}
+
+//theme 3
+
+.App.theme3 {
+  background-color: var(--Very-dark-violet1);
+  .calculator-container {
+    .header {
+      color: var(--Light-yellow);
+      .toggle {
+        background-color: var(--Very-dark-violet2);
+        .switch-btn {
+          background-color: var(--Pure-cyan);
+        }
+      }
+    }
+    .output {
+      background-color: var(--Very-dark-violet2);
+      .current-operand {
+        color: var(--Light-yellow);
+      }
+    }
+    .calculator-grid {
+      background-color: var(--Very-dark-violet2);
+      button {
+        color: var(--Light-yellow);
+        background-color: var(--Very-dark-violet3);
+        box-shadow: 0 4px 2px -1px var(--Vivid-magenta);
+      }
+      .light {
+        background-color: var(--Dark-violet);
+        box-shadow: 0 4px 2px -1px var(--Dark-magenta);
+        color: white;
+      }
+      .equal {
+        background-color: var(--Pure-cyan);
+        box-shadow: 0 4px 2px -1px var(--Soft-cyan);
+        color: var(--Very-dark-blue);
+      }
+    }
+  }
+}
